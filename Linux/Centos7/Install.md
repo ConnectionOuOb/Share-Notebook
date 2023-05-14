@@ -6,7 +6,8 @@ Centos 安裝流程
 
 1. 材料
 
-    1. 下載 Centos 7 安裝映像 ISO 檔
+    1. 下載 Centos 7 安裝 ISO 檔
+        - [台灣國立陽明交通大學站點](http://centos.cs.nctu.edu.tw/7/isos/x86_64/)
     2. 一個 USB，最小大小如下 :
         1. Minimal      至少 4 GB
         2. DVD          至少 8 GB
