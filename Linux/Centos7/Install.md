@@ -6,9 +6,11 @@ Centos 安裝流程
 
 1. 材料
 
-    1. 一個 USB，最小大小如下 :
-        1. DVD 版本
-    2. Proxmox VE 安裝映像 ISO 檔
+    1. 下載 Centos 7 安裝映像 ISO 檔
+    2. 一個 USB，最小大小如下 :
+        1. Minimal      至少 4 GB
+        2. DVD          至少 8 GB
+        3. Everything   至少 16 GB 
     3. 一台要安裝的伺服器
 
 2. 步驟
