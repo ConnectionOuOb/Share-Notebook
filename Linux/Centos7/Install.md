@@ -1,4 +1,4 @@
-Centos USB 安裝流程
+Centos 7 USB 安裝流程
 ===
 
 事前準備
