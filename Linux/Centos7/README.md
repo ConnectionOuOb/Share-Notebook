@@ -11,10 +11,10 @@ CentOS（Community Enterprise Operating System）
 安裝
 ---
 
-1. [USB 開機碟安裝過程](Install.md)
+1. [USB 開機碟安裝](Install.md)
 
 設定
 ---
-1. [防火牆設定](Firewall.md)
-2. [SSH 設定](SSH.md)
-3. [FTP 設定](FTP.md)
+1. [防火牆](Firewall.md)
+2. [SSH](SSH.md)
+3. [FTP](FTP.md)
