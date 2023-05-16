@@ -62,11 +62,9 @@ Windows 11 設定
 20. **裝置管理員** -> **Ethernet 控制卡** -> 右鍵 **更新驅動程式** -> 瀏覽 VirtIO ISO 的驅動
 ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/918d90d4-15d7-47ca-ae62-2ac7db2f13da)
 21. **設定** -> **系統** -> **關於** -> **進階系統設定** -> **效能設定** -> **調整為最佳效能** -> **確定**
-22. (可選) **設定** -> **應用程式** -> **應用程式與功能**
-    移除掉 :
-    ```Groove 音樂、Microsoft OneDrive、Microsoft Solitaire Collection、Microsoft 新聞
-    Office、Microsoft TODO、Microsoft Automate、Xbox*、天氣、便籤、語音與電視、電影與電視```
-23. **設定** -> **系統** -> **重新命名** 填成 ```Template``` -> '''立即重新啟動'''
+22. (可選) **設定** -> **應用程式** -> **應用程式與功能** -> 移除掉 :
+    ```Groove 音樂、Microsoft OneDrive、Microsoft Solitaire Collection、Microsoft 新聞、Office、Microsoft TODO、Microsoft Automate、Xbox*、天氣、便籤、語音與電視、電影與電視```
+23. **設定** -> **系統** -> **重新命名** -> **立即重新啟動**
 24. **設定** -> **系統** -> **遠端桌面** -> 開啟
 25. **設定** -> **系統** -> **開啟/關閉** -> **螢幕與睡眠** -> **永不**
 26. 關掉虛擬機
