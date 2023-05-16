@@ -71,6 +71,6 @@ Proxmox VE 基本安裝
 8. 系統安裝成功
 9. 移除 USB
 
-參考文章
+參考來源
 ---
 1. https://ithelp.ithome.com.tw/articles/10265378
