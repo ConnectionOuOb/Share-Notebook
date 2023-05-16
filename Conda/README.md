@@ -3,7 +3,7 @@ Conda
 
 安裝
 ---
-- 官方教學 : https://docs.anaconda.com/free/anaconda/install/
+- 官方教學 : [傳送門](https://docs.anaconda.com/free/anaconda/install/)
 
 常用指令
 ---
