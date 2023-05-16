@@ -10,6 +10,11 @@ Proxmox VE (Virtual Environment)
 4. 統一管理計算/儲存/網路，可以快速的佈署以及遷移服務
 5. 用戶社群廣大，並且被許多中小企業使用
 
+安裝
+---
+1. USB 安裝
+    - [Proxmox VE 安裝流程](Install.md)
+
 虛擬機
 ---
 1. Windows 11 虛擬機器
