@@ -24,15 +24,17 @@ SSH 設定方式
 
 1. 開啟 SSH 服務
     - 時機 : SSH 是關閉的時候
-    - ```sudo systemctl start sshd.service```
+    - ```sudo systemctl start sshd```
 2. 重啟 SSH 服務
     - 時機 : 剛設定完 SSH，要載入設定
-    -  ```sudo systemctl restart sshd.service```
+    -  ```sudo systemctl restart sshd```
 3. 關閉 SSH 服務
     - 時機 : SSH 出事情，要緊急關閉的時候
-    -  ```sudo systemctl stop sshd.service```
-4. 開機自行啟動 SSH
-    - ```sudo systemctl enable sshd.service```
+    -  ```sudo systemctl stop sshd```
+4. 查看 SSH 狀態
+    -  ```sudo systemctl status sshd```
+5. 開機自行啟動 SSH
+    - ```sudo systemctl enable sshd```
 
 啟用防火牆
 ---
