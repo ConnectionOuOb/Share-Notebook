@@ -13,7 +13,7 @@ CentOS（Community Enterprise Operating System）
 
 1. [USB 開機碟安裝](Install.md)
 
-設定
+系統設定
 ---
 1. [防火牆](Firewall.md)
 2. [SSH](SSH.md)
