@@ -1,4 +1,4 @@
-Proxmox tutorial
+Proxmox VE (Virtual Environment)
 ===
 
 簡介
@@ -10,5 +10,12 @@ Proxmox tutorial
 4. 統一管理計算/儲存/網路，可以快速的佈署以及遷移服務
 5. 用戶社群廣大，並且被許多中小企業使用
 
-新增虛擬機
+虛擬機
 ---
+1. Windows 11 虛擬機器
+    - [建立 Win11 虛擬機](VM_Win11.md)
+
+網路
+---
+1. IP Forwarding
+    - [Proxmox 通訊阜轉接](Port_Forwading.md)
