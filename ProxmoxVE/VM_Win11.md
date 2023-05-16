@@ -5,17 +5,14 @@ Proxmox 設定
 ---
 
 1. 點選右上角 **建立 VM**
-    ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/9bf4cd84-7449-4b21-a88c-7fc6096189f4)
 2. 設定模板資訊
     1. 設定 **ID**
     2. 設定 **名稱**
     3. 點選 **繼續**
-    ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/8943c6d0-8b19-488e-b130-19115aad59da)
 3. 設定作業系統
     1. **使用 CD/DVD 光碟映像檔案（ISO）** 選 **Windows 11 ISO 檔** (必須先上傳到 local)
     2. **客體作業系統** 設定成 **Microsoft Windows** 的 **11/2022** 版本
     3. 點選 **繼續**
-    ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/f21cd7e3-3ac8-4633-bcb1-571dc84ee5b8)
 4. 設定系統
     1. 設定 **EFI 儲存** 及 **TPM 儲存** 位置
     2. 其餘設定按照照片
