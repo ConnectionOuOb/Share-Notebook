@@ -10,4 +10,4 @@ CodeFormer
 ---
 
 1. 安裝 Git
-2. [安裝 Conda](Conda/README.md)
+2. [安裝 Conda](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Conda/README.md)
