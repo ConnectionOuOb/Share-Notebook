@@ -42,3 +42,5 @@ Conda
         - ```conda env export > {yml檔案位置}```
     7. 用 yml 建立虛擬環境
         - ```conda env create -f {yml檔案位置}```
+    8. 重新命名虛擬環境
+        - ```conda rename -n {舊名稱} {新名稱}```
