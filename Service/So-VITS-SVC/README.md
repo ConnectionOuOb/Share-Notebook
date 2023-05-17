@@ -42,7 +42,12 @@ SoftVC VITS Singing Voice Conversion 4.0
 資料前處理
 ---
 
-- 把資料集切分成每個音檔都 5 到 15 秒的音檔
+- 目標 : 每個訓練的音檔都 5 到 15 秒，並且盡量乾淨無雜音
+- 可用工具
+    1. 分離人聲以及背景的軟體
+        - [使用方法]()
+    2. 音擋切分成軟體
+        - [使用方法]()
 - 要訓練的資料集放在 **dataset_raw** 資料夾中，格式如下
 ```
 dataset_raw
@@ -65,7 +70,7 @@ dataset_raw
 3. ```python preprocess_hubert_f0.py --f0_predictor dio```
     - **f0_predictor** 可以改成
         - ```crepe```，使用在資料及很 noisy
-        - ```dio```，不給的話，這是預設
+        - ```dio```，這是預設
         - ```pm```
         - ```harvest```
 4. 正式訓練 : ```python train.py -c configs/config.json -m 44k```
@@ -73,12 +78,12 @@ dataset_raw
     - 指令
         - ```python inference_main.py -m "logs/44k/G_30400.pth" -c "configs/config.json" -n "君の知らない物語-src.wav" -t 0 -s "nen"```
     - 必備參數
-        1. -m  | --model_path  : path to the model.
-        2. -c  | --config_path : path to the configuration file.
-        3. -n  | --clean_names : a list of wav file names located in the raw folder.
-        4. -t  | --trans       : pitch adjustment, supports positive and negative (semitone) values.
-        5. -s  | --spk_list    : target speaker name for synthesis.
-        6. -cl | --clip        : voice forced slicing, set to 0 to turn off(default), duration in seconds.
+        1. -m | --model_path : path to the model.
+        2. -c | --config_path : path to the configuration file.
+        3. -n | --clean_names : a list of wav file names located in the raw folder.
+        4. -t | --trans : pitch adjustment, supports positive and negative (semitone) values.
+        5. -s | --spk_list : target speaker name for synthesis.
+        6. -cl | --clip : voice forced slicing, set to 0 to turn off(default), duration in seconds.
     - 可選參數
         1. -lg | --linear_gradient: The cross fade length of two audio slices in seconds. If there is a discontinuous voice after forced slicing, you can adjust this value. Otherwise, it is recommended to use the default value of 0.
         2. -f0p | --f0_predictor: Select F0 predictor, can select crepe,pm,dio,harvest, default pm(note: crepe is original F0 meaning pooling)
