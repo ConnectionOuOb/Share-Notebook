@@ -45,9 +45,9 @@ SoftVC VITS Singing Voice Conversion 4.0
 - 目標 : 每個訓練的音檔都 5 到 15 秒，並且盡量乾淨無雜音
 - 可用工具
     1. 分離人聲以及背景的軟體
-        - [UVR](https://github.com/Connection2Peter/ConnectionNotebook/tree/main/Service/UVR5)
+        - [UVR](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/OpenSource/UVR5/README.md)
     2. 音擋切分軟體
-        - [Audio Slicer](https://github.com/Connection2Peter/ConnectionNotebook/tree/797708caafc314ba954ef69e0d4c850cc5c6df9a/OpenSource/AudioSlicer)
+        - [Audio Slicer](https://github.com/Connection2Peter/ConnectionNotebook/tree/797708caafc314ba954ef69e0d4c850cc5c6df9a/OpenSource/AudioSlicer/README.md)
 - 要訓練的資料集放在 **dataset_raw** 資料夾中，格式如下
 ```
 dataset_raw
