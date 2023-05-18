@@ -19,18 +19,13 @@ huggingface transformers
 ---
 1. Transformer
     - [Github](https://github.com/huggingface/transformers)
-    - 可用方法
+    - 文本分類
         1. 載入預訓練的模型
-```
-model = (
-    transformers.AutoModelForSequenceClassification.from_pretrained(
-        預訓練的模型名稱,
-        num_labels=分類數量,
-        id2label={ ID : 分類 }的 map,
-        label2id={ 分類 : ID }的 map,
-    ).to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
-)
-```
+            - ```transformers.AutoModelForSequenceClassification.from_pretrained```
+        2. 設定參數
+            - ```transformers.TrainingArguments```
+        3. 使用訓練工具開始訓練
+            - ```transformers.Trainer```
 2. Tokenizers
     - [官網連結](https://github.com/huggingface/tokenizers)
     - 可用方法
