@@ -30,7 +30,7 @@ model = (
         label2id={ 分類 : ID }的 map,
     ).to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
 )
-```
+            ```
 2. Tokenizers
     - [官網連結](https://github.com/huggingface/tokenizers)
     - 可用方法
