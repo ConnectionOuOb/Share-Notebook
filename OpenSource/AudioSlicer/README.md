@@ -11,8 +11,8 @@ Audio Slicer
 ---
 
 1. 下載這個腳本 : [載點](https://raw.githubusercontent.com/openvpi/audio-slicer/main/slicer2.py)
-2. 下載 **numpy**、**librosa**、****
-    - ```pip install numpy librosa ```
+2. 下載 **numpy**、**librosa**
+    - ```pip install numpy librosa```
 
 指令
 ---
