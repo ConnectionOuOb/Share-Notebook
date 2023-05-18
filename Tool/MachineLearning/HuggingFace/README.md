@@ -21,7 +21,7 @@ huggingface transformers
     - [Github](https://github.com/huggingface/transformers)
     - 可用方法
         1. 載入預訓練的模型
-            - ```
+```
 model = (
     transformers.AutoModelForSequenceClassification.from_pretrained(
         預訓練的模型名稱,
