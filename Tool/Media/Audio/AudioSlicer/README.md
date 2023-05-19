@@ -14,6 +14,10 @@ Audio Slicer
 2. 下載 **numpy**、**librosa**
     - ```pip install numpy librosa```
 
+可運行配置
+---
+- [conda yml](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/Media/Audio/AudioSlicer/conda_env.yml)
+
 指令
 ---
 - 指令
