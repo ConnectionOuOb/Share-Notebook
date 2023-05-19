@@ -10,8 +10,8 @@ CodeFormer
 安裝方法
 ---
 
-1. [安裝 Git](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Git/README.md)
-2. [安裝 Conda](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Conda/README.md)
+1. [安裝 Git](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/ProgramEnvironment/Git/README.md)
+2. [安裝 Conda](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/ProgramEnvironment/Conda/README.md)
 3. 開一個 Terminal，輸入 ```cd {目標目錄}``` 移動到要下載的目錄
 4. 輸入 ```git clone https://github.com/sczhou/CodeFormer``` CodeFormer 下來
 5. 輸入 ```cd CodeFormer``` 進入 CodeFormer 資料夾
