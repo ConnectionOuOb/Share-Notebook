@@ -10,8 +10,8 @@ SoftVC VITS Singing Voice Conversion 4.0
 安裝方法
 ---
 
-1. [安裝 Git](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/ProgramEnvironment/Git/README.md)
-2. [安裝 Conda](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/ProgramEnvironment/Conda/README.md)
+1. [安裝 Git](Tool/ProgramEnvironment/Git/README.md)
+2. [安裝 Conda](Tool/ProgramEnvironment/Conda/README.md)
 3. 開一個 Terminal，輸入 ```cd {目標目錄}``` 移動到要下載的目錄
 4. ```git clone https://github.com/svc-develop-team/so-vits-svc```
 5. ```cd so-vits-svc``` 進入 so-vits-svc 資料夾
