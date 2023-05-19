@@ -22,6 +22,10 @@ CodeFormer
 10. 要用 dlib 跑臉部辨識就下載 ```conda install -c conda-forge dlib```
 11. 要用跑影片增強就下載 ```conda install -c conda-forge ffmpeg```
 
+可運行配置
+---
+- [conda yml](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/Media/Picture/CodeFormer/conda_env.yml)
+
 前置動作
 ---
 
