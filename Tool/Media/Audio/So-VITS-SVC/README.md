@@ -24,6 +24,10 @@ SoftVC VITS Singing Voice Conversion 4.0
     - Linux
         1. ```pip install -r requirements.txt```
 
+可運行配置
+---
+- [conda yml](https://github.com/Connection2Peter/ConnectionNotebook/blob/main/Tool/Media/Audio/So-VITS-SVC/conda_env.yml)
+
 前置動作
 ---
 
