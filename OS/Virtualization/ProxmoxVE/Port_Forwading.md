@@ -39,7 +39,7 @@ post-down iptables -t nat -D POSTROUTING -s '{虛擬網段IP/CIDR}' -o vmbr1 -j 
 post-up   iptables -t raw -I PREROUTING -i fwbr+ -j CT --zone 1
 post-down iptables -t raw -D PREROUTING -i fwbr+ -j CT --zone 1
 ```
-4. 按 **Ctrl+X**，輸入 ```y``，儲存這個設定檔案
+4. 按 **Ctrl+X**，輸入 ```y```，儲存這個設定檔案
 5. 再命令列輸入 ```iptables -t nat -A PREROUTING -p tcp -d {外網IP} --dport {對外port} -i vmbr1 -j DNAT --to-destination {虛擬機IP}:{虛擬機port}``` 設定導向規則
     - 例如要從外網 IP **123.123.123.123** 的機器的 port 33899 轉接進內網 IP 為 10.10.10.10的虛擬機 port 3389，設定就會像這樣
     - ```iptables -t nat -A PREROUTING -p tcp -d 123.123.123.123 --dport 33899 -i vmbr1 -j DNAT --to-destination 10.10.10.10:3389```
