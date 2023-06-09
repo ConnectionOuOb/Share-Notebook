@@ -18,16 +18,16 @@ phpMyAdmin 設定方式
 6. 安裝 phpMyAdmin ```sudo yum install phpmyadmin -y```
 7. 安裝完成
 
-設定
+修改登入設定 (可選)
 ---
 
 1. 編輯設定檔 ```sudo vim /etc/httpd/conf.d/phpMyAdmin.conf```
-2. 會有一行是註解起來的 ```#Port 22```，改成 ```Port {你要設定的PORT}```
-    - 例如要改成用 TCP Port 66666 連線，就改成 ```Port 66666```
-3. 有一行是 ```#PermitRootLogin yes```，是指可以用 root 最高權限登入系統，建議關閉
-    - 該行修改成 ```PermitRootLogin no```
-5. 按 **esc**，然後輸入 ```:wq``` 儲存後離開
-6. 設定完成
+2. 修改預設的 IP 127.0.0.1 成你要登入的 IP
+    - 有一行是 ```Require ip 127.0.0.1```
+    - 該行修改成 ```Require ip {登入 IP}```
+3. 按 **esc**，然後輸入 ```:wq``` 儲存後離開
+4.  httpd ```sudo systemctl restart httpd```
+5. 設定完成
 
 
 啟用防火牆
