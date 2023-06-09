@@ -18,7 +18,7 @@ phpMyAdmin 設定方式
 6. 安裝 phpMyAdmin ```sudo yum install phpmyadmin -y```
 7. 安裝完成
 
-修改登入設定 (可選)
+修改連入設定
 ---
 
 1. 編輯設定檔 ```sudo vim /etc/httpd/conf.d/phpMyAdmin.conf```
@@ -36,15 +36,3 @@ phpMyAdmin 設定方式
 3. 按 **esc**，然後輸入 ```:wq``` 儲存後離開
 4.  httpd ```sudo systemctl restart httpd```
 5. 設定完成
-
-
-啟用防火牆
----
-
-1. 要開啟 SSH 外部連入要把防火牆開洞
-    - 如果為預設的 Port 22 : ```sudo firewall-cmd --permanent --zone=public --add-port=22/tcp```
-    - 如果有修改 Port : ```sudo firewall-cmd --permanent --zone=public --add-port={修改的Port}/tcp```
-        - 以 Port 66666 為例需輸入 : ```sudo firewall-cmd --permanent --zone=public --add-port=66666/tcp```
-2. 重啟防火牆讓設定生效
-    - 輸入 ```sudo firewall-cmd --reload```
-3. 這樣就能從外部連進來了
