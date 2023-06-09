@@ -22,9 +22,17 @@ phpMyAdmin 設定方式
 ---
 
 1. 編輯設定檔 ```sudo vim /etc/httpd/conf.d/phpMyAdmin.conf```
-2. 修改預設的 IP 127.0.0.1 成你要登入的 IP
+2. 修改預設的 IP 127.0.0.1 成可登入的 IP
     - 有一行是 ```Require ip 127.0.0.1```
-    - 該行修改成 ```Require ip {登入 IP}```
+    - 該行修改成 ```Require ip {可登入 IP}```
+    - 或是使用語法
+        1. ```Require all denied``` 全部不要
+        2. ```Require all granted``` 全部都要
+        3. ```Require host {網域名稱}``` 特定網域名稱內可連線
+        4. ```Require ip {網段}``` 特定網段內可連線
+            - 例如網段 192.168.0.0 就是 ```Require ip 192.168```
+        5. ```Require ip {IP/CIDR}``` 特定網段內可連線 IP/CIDR
+            - 例如網段 192.168.0.0 就是 ```Require ip 192.168.0.0/16```
 3. 按 **esc**，然後輸入 ```:wq``` 儲存後離開
 4.  httpd ```sudo systemctl restart httpd```
 5. 設定完成
