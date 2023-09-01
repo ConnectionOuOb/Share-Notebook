@@ -44,6 +44,7 @@ Bios 設定
 
 Windows 11 安裝設定
 ---
+
 1. 開機
     1. **機器**
     2. **主控台**
@@ -57,36 +58,25 @@ Windows 11 安裝設定
     ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/d1270b18-c777-4543-88e5-ed1f8c1b16a0)
 5. 選自訂
     ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/e82672b5-61ff-4016-bc95-6d0c96192c9c)
-6. 切到 **硬體** -> **CD/DVD** -> 換成 **virtio** ISO
-7. 選對應 driver
-    ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/f744d9ae-e1ed-49bc-a614-d83068114c66)
-8. 切到 **硬體** -> **CD/DVD** -> 換回 **Win 11** ISO
-9. 下一步
-10. 虛擬機自動重啟   
-11. 設定地區
-12. 設定輸入法
-13. 沒有網際網路
-14. 進行有限的設定
-15. 設定 **名稱**
-16. 設定 **密碼**
-17. 填寫安全性問題
-18. 關閉所有隱私設定
-19. 切到 **硬體** -> **CD/DVD** -> 換成 **virtio** ISO
-20. **裝置管理員** -> **Ethernet 控制卡** -> 右鍵 **更新驅動程式** -> 瀏覽 VirtIO ISO 的驅動
-![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/918d90d4-15d7-47ca-ae62-2ac7db2f13da)
-21. **設定** -> **系統** -> **關於** -> **進階系統設定** -> **效能設定** -> **調整為最佳效能** -> **確定**
-22. (可選) **設定** -> **應用程式** -> **應用程式與功能** -> 移除掉 :
-    ```Groove 音樂、Microsoft OneDrive、Microsoft Solitaire Collection、Microsoft 新聞、Office、Microsoft TODO、Microsoft Automate、Xbox*、天氣、便籤、語音與電視、電影與電視```
-23. **設定** -> **系統** -> **重新命名** -> **立即重新啟動**
-24. **設定** -> **系統** -> **遠端桌面** -> 開啟
-25. **設定** -> **系統** -> **開啟/關閉** -> **螢幕與睡眠** -> **永不**
-26. 關掉虛擬機
-27. 加硬碟
-28. 設定參數
-29. 加網路裝置
-30. 設定如下
-![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/6f7de7d8-3d3d-4c2c-ba58-1d0e310649e6)
-31. 退出 CD/DVD
-32. **機器** -> **主控台** -> **啟動**
-33. **磁碟管理** -> **GPT格式化** -> **簡單磁區格式化**
-34. 完成，關機
+6. 下一步
+7. 電腦重啟   
+
+
+系統內設定
+---
+
+1. 設定地區
+2. 設定輸入法
+3. 沒有網際網路
+4. 進行有限的設定
+5. 設定 **名稱**
+6. 設定 **密碼**
+7. 填寫安全性問題
+8. 關閉所有隱私設定
+9. **設定** -> **系統** -> **關於** -> **進階系統設定** -> **效能設定** -> **調整為最佳效能** -> **確定**
+10. **設定** -> **系統** -> **重新命名** -> **立即重新啟動**
+11. **設定** -> **系統** -> **遠端桌面** -> 開啟
+12. **設定** -> **系統** -> **開啟/關閉** -> **螢幕與睡眠** -> **永不**
+13. 系統更新到最新
+13. 完成，關機
+
