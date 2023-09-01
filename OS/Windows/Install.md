@@ -58,8 +58,9 @@ Windows 11 安裝設定
     ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/d1270b18-c777-4543-88e5-ed1f8c1b16a0)
 5. 選自訂
     ![image](https://github.com/Connection2Peter/ConnectionNotebook/assets/69660530/e82672b5-61ff-4016-bc95-6d0c96192c9c)
-6. 下一步
-7. 電腦重啟   
+6. 選系統碟，選自動分割確認後繼續
+7. 下一步
+8. 電腦重啟   
 
 
 系統內設定
