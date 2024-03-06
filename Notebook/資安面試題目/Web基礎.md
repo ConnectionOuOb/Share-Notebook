@@ -39,3 +39,6 @@ stateless無狀態的。每個請求之間為相互獨立。
 
 ## CORS
 - 跨源資源共享。可以在 HTTP 標頭中指定允許的來源。發送帶有選項設定的預檢請求，詢問伺服器是否批准，如果伺服器批准，則發送實際請求
+
+## SSL handshake
+- ![alt text](image/SSL.png)
