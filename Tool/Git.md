@@ -77,6 +77,13 @@
         - 例如 : ```git remote add origin git@github.com:microsoft/qlib.git```
 
 
+
+## 後續工作流程
+![GitWorkflow](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/19d5d9a4-f397-4744-918b-ced9a47f486d)
+### 
+
+
+
 ## 附錄
 ### 設定機器的 ssh public 金鑰到 Github
 1. 開啟要上傳的機器的 Terminal
