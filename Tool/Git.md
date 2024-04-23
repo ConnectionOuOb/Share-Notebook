@@ -24,7 +24,7 @@
     - 團隊協作
         - 透過分支的創建與合併，讓不同人得以在同一專案上有序地協作
 - Git 的架構
-    - ![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/e5e3e997-774c-482e-9a66-f148edf1d879)
+![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/e5e3e997-774c-482e-9a66-f148edf1d879)
 
 
 
