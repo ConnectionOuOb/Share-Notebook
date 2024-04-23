@@ -1,4 +1,4 @@
-## 大綱
+![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/bf19f2c7-7fc3-4aed-aaa7-6fffa0b123dd)## 大綱
 ### 1. 建立儲存庫
 ####  - 遠端
 ####  - 本地
@@ -57,12 +57,13 @@
 1. 使用 clone 指令複製到本地
     - 經由 https
         - 格式 : ```git clone https://github.com/{Owner名稱}/{儲存庫名稱}.git```
-        - 例如 : ```https://github.com/microsoft/qlib.git```
+        - 例如 : ```git clone https://github.com/ConnectionOuOb/Test123.git```
     - 經由 ssh
-        - 格式 : ```git@github.com:{Owner名稱}/{儲存庫名稱}.git```
-        - 例如 : ```git@github.com:microsoft/qlib.git```
+        - 格式 : ```git clone git@github.com:{Owner名稱}/{儲存庫名稱}.git```
+        - 例如 : ```git clone git@github.com:ConnectionOuOb/Test123.git```
 
 ### 從本地上傳遠端
+#### 初次上傳
 1. 確認已經做過 ```git init``` (確認 **".git/"** 資料夾是否存在)
 2. 執行 ```git commit -m "First commit"``` 來說明這次上傳行為
 3. 因為 GitHub 遠端預設 branch 是 **main** 而非 **master**，所以要執行 ```git branch -M main"``` 把 **master branch** 修改成 **main branch**
@@ -70,17 +71,54 @@
     - 因為權限因素，建議採用 ssh 儲存庫位置
     - 經由 https
         - 格式 : ```git remote add origin https://github.com/{Owner名稱}/{儲存庫名稱}.git```
-        - 例如 : ```git remote add origin https://github.com/microsoft/qlib.git```
+        - 例如 : ```git remote add origin https://github.com/ConnectionOuOb/Test123.git```
     - 經由 ssh
         - 須先新增機器的 ssh public 金鑰到 Github 後再執行後續步驟，設定方法參考最後方附錄
         - 格式 : ```git remote add origin git@github.com:{Owner名稱}/{儲存庫名稱}.git```
-        - 例如 : ```git remote add origin git@github.com:microsoft/qlib.git```
+        - 例如 : ```git remote add origin git@github.com:ConnectionOuOb/Test123.git```
+5. 推送並更新遠端 branch ```git push -u origin main```
+
+#### 非初次上傳
+1. 設定遠方代碼庫位置
+    - 因為權限因素，建議採用 ssh 儲存庫位置
+    - 經由 https
+        - 格式 : ```git remote add origin https://github.com/{Owner名稱}/{儲存庫名稱}.git```
+        - 例如 : ```git remote add origin https://github.com/ConnectionOuOb/Test123.git```
+    - 經由 ssh
+        - 須先新增機器的 ssh public 金鑰到 Github 後再執行後續步驟，設定方法參考最後方附錄
+        - 格式 : ```git remote add origin git@github.com:{Owner名稱}/{儲存庫名稱}.git```
+        - 例如 : ```git remote add origin git@github.com:ConnectionOuOb/Test123.git```
+2. 確保有 main branch ```git branch -M main```
+3. 推送並更新遠端 branch ```git push -u origin main```
 
 
 
 ## 後續工作流程
 ![GitWorkflow](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/19d5d9a4-f397-4744-918b-ced9a47f486d)
-### 
+### 命令行模式
+1. 建立新 branch
+    - branch 名稱建議有規律並且統一，可為:
+        - 版本號，如 ```v0.1.1```
+        - 修改人，如 ```coneection```
+        - 功能，如 ```Hot-fix_Pr87```
+2. 確認是否在正確的 branch
+    - 執行 ```git branch``` 後看 * 有沒有在標在你的 branch 旁邊
+    - 如果沒有的話就用 ```git checkout {你的branch名稱}```
+從遠端下載遠端的最新版本
+ 執行 ```git pull```
+把檔案交給 Git ，讓 Git 開始追蹤後續修正
+ 執行 ```git add .```
+建立一個修改版本的總結，盡量簡短到一句以內，詳細的可以後續再標註
+ 執行 ```git commit -m “{版本總結文字}”```
+推送到遠端
+ 執行 ```git push```
+![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/a727c9af-24bc-4016-872f-66be74644407)
+
+
+
+
+
+
 
 
 
