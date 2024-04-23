@@ -1,17 +1,27 @@
-![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/bf19f2c7-7fc3-4aed-aaa7-6fffa0b123dd)## 大綱
-### 1. 建立儲存庫
-####  - 遠端
-####  - 本地
-### 2. 初次上傳專案
-####   - 從遠端拉到本地
-####   - 從本地上傳遠端
-### 3. 後續工作流程
-####   - 命令行模式
-####   - GitHub desktop
+# Git / GitHub 筆記
+## 大綱
+1. 建立儲存庫
+    - 本地
+    - 遠端
+2. 專案建置設定
+    - 從遠端拉到本地
+    - 從本地上傳遠端
+3. 後續工作流程
+    - 命令行模式
+    - GitHub desktop
 
 
 
-## 建立儲存庫 (以 GitHib 為範例)
+## 建立儲存庫 (以 GitHub 為範例)
+### 本地
+1. 開啟 Terminal
+2. 跳轉到以下任一種目錄，```cd {專案位置}```
+    - 想要全新建立的專案
+    - 想要上傳專案到 GitHib 的專案
+3. 輸入指令 ```git init```
+4. 建立成功
+
+
 ###  遠端
 1. 登入 [GitHub](https://github.com/login)
 2. 登入成功後導航到 [Dashboard](https://github.com/)
@@ -39,17 +49,8 @@
 7. 建立成功
 
 
-### 本地
-1. 開啟 Terminal
-2. 跳轉到以下任一種目錄，```cd {專案位置}```
-    - 想要全新建立的專案
-    - 想要上傳專案到 GitHib 的專案
-3. 輸入指令 ```git init```
-4. 建立成功
 
-
-
-## 初次上傳專案
+## 專案建置設定
 1. 開啟 Terminal
 2. 跳轉到放專案的目錄，```cd {目錄位置}```
 
@@ -98,27 +99,31 @@
 ### 命令行模式
 1. 建立新 branch
     - branch 名稱建議有規律並且統一，可為:
-        - 版本號，如 ```v0.1.1```
-        - 修改人，如 ```coneection```
-        - 功能，如 ```Hot-fix_Pr87```
+        - (最建議) 版本號，如 **v0.1.1**
+        - (建議) 修改人，如 **coneection**
+        - 新功能，如 **Search-Algp** 或 **Hot-fix_PR-10**
+    - 使用 ```git branch {branch 名稱}``` 建立
+    - 以 connection 為例，就是 ```git branch connection```
 2. 確認是否在正確的 branch
-    - 執行 ```git branch``` 後看 * 有沒有在標在你的 branch 旁邊
-    - 如果沒有的話就用 ```git checkout {你的branch名稱}```
-從遠端下載遠端的最新版本
- 執行 ```git pull```
-把檔案交給 Git ，讓 Git 開始追蹤後續修正
- 執行 ```git add .```
-建立一個修改版本的總結，盡量簡短到一句以內，詳細的可以後續再標註
- 執行 ```git commit -m “{版本總結文字}”```
-推送到遠端
- 執行 ```git push```
-![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/a727c9af-24bc-4016-872f-66be74644407)
+    - 直接執行 ```git branch``` 後看 * 符號有沒有在標在你的 branch 旁邊
+        - 如果沒有的話就用 ```git checkout {你的branch名稱}``` 來切到你的 branch
+        - 以 connection 為例，就是 ```git checkout connection```
+3. 從遠端下載遠端的最新版本
+    - 執行 ```git pull```
+4. 把檔案交給 Git ，讓 Git 開始追蹤後續修正
+    - 執行 ```git add .```
+5. 建立一個對修改內容的總結，簡短到一句以內，詳細的描述後續可以再標註
+    - 執行 ```git commit -m “{修改內容總結文字}”```
+    - 例如 ```git commit -m “v240423_1239”```
+6. 推送到遠端
+    - 執行 ```git push```
 
 
-
-
-
-
+### GitHub Desktop
+- 僅限 PC 能使用
+- Unix/Linux Server 只能用上一部份的命令列
+- 要另外裝 [GitHub desktop](https://desktop.github.com/)
+- 登錄自己的 GitHub 帳號
 
 
 
