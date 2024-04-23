@@ -10,8 +10,10 @@
 4. [後續工作流程](#後續工作流程)
     - [命令行模式](#命令行模式)
     - [GitHub desktop](#github-desktop)
-5. [附錄](#附錄)
-6. [參考](#參考)
+5. [合併分支](#合併分支)
+6. [回復版本](#回復版本)
+7. [附錄](#附錄)
+8. [參考](#參考)
 
 
 
@@ -145,10 +147,28 @@
 
 ## 合併分支
 - 功能都開發完成後，可以進行 branch 的整併
+- 根據遠端儲存庫位置決定動作
+    - 在 GitHub
+        1. 開啟專案的 GitHub 網頁
+        2. 點選 **Pull requests** 按鈕
+        3. 點選 **New pull request** 按鈕
+        4. 把 **base** 的 banch 設定成 **你要 merge 到的目標**
+        5. 把 **compare** 的 banch 設定成 **你要 merge 的來源**
+        6. 點選 **Create pull request** 按鈕
+        7. 點選 **Merge pull request** 按鈕
+    - 在本地
+        1. 使用 ```git checkout``` 切到你要 merge 到的目標
+        2. 使用 ```git merge {你要 merge 的來源}``` 來合併 branch
 
-### 如果遠端儲存庫在 GitHub
-1. 開啟專案的 GitHub 網頁
-2. 點選 **Pull Request** 按鈕
+
+
+## 回復版本
+- 在開發過程中發現錯，需要重置到先前版本
+- 方法
+    - ```git reset {要回復的 commit 代號}```
+        - 強硬，直接退回較早的版本
+    - ```git revert {要回復的 commit 代號}```
+        - 創建一個內容跟舊版本相同的新 commit
 
 
 
