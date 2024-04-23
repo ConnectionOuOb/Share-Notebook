@@ -1,14 +1,29 @@
 # Git / GitHub 筆記
 ## 大綱
-1. [建立儲存庫](#建立儲存庫-以-github-為範例)
+1. [簡介](#簡介)
+2. [建立儲存庫](#建立儲存庫-以-github-為範例)
     - [本地](#本地)
     - [遠端](#遠端)
-2. [專案建置設定](#專案建置設定)
+3. [專案建置設定](#專案建置設定)
     - [從遠端拉到本地](#從遠端拉到本地)
     - [從本地上傳遠端](#從本地上傳遠端)
-3. [後續工作流程](#後續工作流程)
+4. [後續工作流程](#後續工作流程)
     - [命令行模式](#命令行模式)
     - [GitHub desktop](#github-desktop)
+5. [附錄](#附錄)
+6. [參考](#參考)
+
+
+
+## 簡介
+- Git 的功能
+    - 版本控制
+        - 為專案每個時間的修改賦予一組總結的代碼，便於後續追蹤
+    - 團隊協作
+        - 透過分支的創建與合併，讓不同人得以在同一專案上有序地協作
+- Git 的架構
+    - ![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/e5e3e997-774c-482e-9a66-f148edf1d879)
+
 
 
 
@@ -108,14 +123,16 @@
     - 直接執行 ```git branch``` 後看 * 符號有沒有在標在你的 branch 旁邊
         - 如果沒有的話就用 ```git checkout {你的branch名稱}``` 來切到你的 branch
         - 以 connection 為例，就是 ```git checkout connection```
-3. 從遠端下載遠端的最新版本
+3. 進行檔案修改，可以用 ```git status``` 看當前已經修改了哪些部分
+4. 從遠端下載遠端的最新版本
     - 執行 ```git pull```
-4. 把檔案交給 Git ，讓 Git 開始追蹤後續修正
-    - 執行 ```git add .```
-5. 建立一個對修改內容的總結，簡短到一句以內，詳細的描述後續可以再標註
+5. 把檔案交給 Git ，讓 Git 開始追蹤後續修正
+    - 執行 ```git add .``` 讓全部檔案被追蹤
+    - 或是只想追蹤特定檔案 ```git add {特定檔案}```
+6. 建立一個對修改內容的總結，簡短到一句以內，詳細的描述後續可以再標註
     - 執行 ```git commit -m “{修改內容總結文字}”```
     - 例如 ```git commit -m “v240423_1239”```
-6. 執行 ```git push``` 推送到遠端
+7. 執行 ```git push``` 推送到遠端
 
 
 ### GitHub Desktop
@@ -123,6 +140,15 @@
 - Unix/Linux Server 只能用上一部份的命令列
 - 要另外裝 [GitHub desktop](https://desktop.github.com/)
 - 登錄自己的 GitHub 帳號
+
+
+
+## 合併分支
+- 功能都開發完成後，可以進行 branch 的整併
+
+### 如果遠端儲存庫在 GitHub
+1. 開啟專案的 GitHub 網頁
+2. 點選 **Pull Request** 按鈕
 
 
 
@@ -142,4 +168,21 @@
 ![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/a27bf0b1-7afb-420f-9b60-e2c2b45b6cd0)
 9. 貼上金鑰後儲存即可完成設定
 ![image](https://github.com/ConnectionOuOb/Share-Notebook/assets/69660530/801c9be0-8cb7-401c-8cfb-99c0a4a7dec1)
+
+
+### 其餘指令
+#### 設定姓名和 Email
+1. ```git config --global user.name "{你的名字}"```
+2. ```git config --global user.email {你的Email}```
+
+#### 列出使用者資料
+- ```git config --list```
+
+#### 檢視 commit 紀錄
+- ```git log```
+
+
+## 參考
+- https://medium.com/@flyotlin/%E6%96%B0%E6%89%8B%E4%B9%9F%E8%83%BD%E6%87%82%E7%9A%84git%E6%95%99%E5%AD%B8-c5dc0639dd9
+
 
