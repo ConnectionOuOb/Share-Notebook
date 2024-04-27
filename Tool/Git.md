@@ -142,6 +142,10 @@
 - Unix/Linux Server 只能用上一部份的命令列
 - 要另外裝 [GitHub desktop](https://desktop.github.com/)
 - 登錄自己的 GitHub 帳號
+- 主要使用部分
+    1. 從 GitHub 複製新專案
+    2. 新增/切換分支
+    3. 修改內容後提交
 
 
 
